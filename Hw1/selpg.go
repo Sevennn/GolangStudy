@@ -40,6 +40,7 @@ func main() {
 		
 		if sa.page_len != 72 && *page_type == true {
 			flag.Usage()
+			return
 		}
 
 		if *page_type == true {
@@ -52,6 +53,7 @@ func main() {
 
 		if len(flag.Args()) > 1 {
 			flag.Usage()
+			return
 		}
 
 		if len(flag.Args()) == 1 {
